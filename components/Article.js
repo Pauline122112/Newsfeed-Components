@@ -114,6 +114,11 @@ function articleMaker(artObj){
   articleDiv.appendChild(paraThree)
   articleDiv.appendChild(wideBtn)
   console.log(articleDiv)
+
+  articleDiv.classList.add('article')
+  paraDate.className = 'date'
+  wideBtn.classList.add('expandButton')
+
 }
 articleMaker()
 
