@@ -113,7 +113,7 @@ function articleMaker(object){
   articleDiv.appendChild(paraTwo)
   articleDiv.appendChild(paraThree)
   articleDiv.appendChild(wideBtn)
-  console.log(articleDiv)
+  
 
 //giving the elements classnames
   articleDiv.classList.add('article')
@@ -123,6 +123,10 @@ function articleMaker(object){
   wideBtn.textContent = '+'
 
   headTwo.textContent = object.title
+  paraDate.textContent = object.date
+  paraOne.textContent = object.firstParagraph
+  paraTwo.textContent = object.secondParagraph
+  paraThree.textContent = object.thirdParagraph
 
 
 
