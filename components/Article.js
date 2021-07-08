@@ -94,7 +94,7 @@ const data = [
   Your component is a function that takes an article object as its only argument,
   and returns a DOM node looking like the one below:
 */
-function articleMaker(artObj){
+function articleMaker(object){
 
 //DOM Elements-still not attached to the page
   const articleDiv = document.createElement('div')
@@ -117,8 +117,14 @@ function articleMaker(artObj){
 
 //giving the elements classnames
   articleDiv.classList.add('article')
+  // h2title.setAttribute('id, title')
   paraDate.className = 'date'
   wideBtn.classList.add('expandButton')
+  wideBtn.textContent = '+'
+
+
+
+
 
   return articleDiv
 
