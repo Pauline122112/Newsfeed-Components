@@ -128,11 +128,20 @@ function articleMaker(object){
   paraTwo.textContent = object.secondParagraph
   paraThree.textContent = object.thirdParagraph
 
+  wideBtn.addEventListener('clicks', () => {
+    articleDiv.classList.toggle('article-open')
+  } )
 
 
   return articleDiv
 
 }
+data.forEach(articleObj => {
+  const article = articleMaker(articleObj)
+  document.querySelector('.articles').appendChild(article)
+})
+
+
 console.log(articleMaker(data[0]))
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
