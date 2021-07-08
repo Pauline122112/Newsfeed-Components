@@ -96,7 +96,7 @@ const data = [
 */
 function articleMaker(artObj){
 
-
+//DOM Elements-still not attached to the page
   const articleDiv = document.createElement('div')
   const h2title = document.createElement('h2')
   const paraDate = document.createElement('p')
@@ -105,11 +105,19 @@ function articleMaker(artObj){
   const paraThree = document.createElement('p')
   const wideBtn = document.createElement('span')
 
-  
+
+  articleDiv.appendChild(h2title)
+  articleDiv.appendChild(paraDate)
+  articleDiv.appendChild(paraDate)
+  articleDiv.appendChild(paraOne)
+  articleDiv.appendChild(paraTwo)
+  articleDiv.appendChild(paraThree)
+  articleDiv.appendChild(wideBtn)
+  console.log(articleDiv)
 }
+articleMaker()
 
-
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   /*<div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
@@ -118,6 +126,7 @@ function articleMaker(artObj){
 
     <span class="expandButton">+</span>
   </div>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
   Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   This listener should toggle the class 'article-open' on div.article.
