@@ -104,6 +104,8 @@ function articleMaker(artObj){
   const paraTwo = document.createElement('p')
   const paraThree = document.createElement('p')
   const wideBtn = document.createElement('span')
+
+  
 }
 
 
