@@ -94,24 +94,19 @@ const data = [
   Your component is a function that takes an article object as its only argument,
   and returns a DOM node looking like the one below:
 */
-function articleMaker(article){
-const div = document.createElement('div')
-const articleDiv = document.querySelector('div .articles')
-articleDiv.appendChild(div)
+function articleMaker(artObj){
 
-const headTwo = document.createElement('h2')
-headTwo.appendChild('h2')
-headTwo.textContent = article.title
 
-const paraData = createElement('p')
-articleDiv.appendChild('paraData')
-paraData.classList.add('date')
-paraData.textContent = article.date 
-
-return article
+  const articleDiv = document.createElement('div')
+  const h2title = document.createElement('h2')
+  const paraDate = document.createElement('p')
+  const paraOne = document.createElement('p')
+  const paraTwo = document.createElement('p')
+  const paraThree = document.createElement('p')
+  const wideBtn = document.createElement('span')
 }
 
-console.log(articleMaker(data[0]))
+
 
   /*<div class="article">
     <h2>{title of the article}</h2>
