@@ -98,7 +98,7 @@ function articleMaker(object){
 
 //DOM Elements-still not attached to the page
   const articleDiv = document.createElement('div')
-  const h2title = document.createElement('h2')
+  const headTwo = document.createElement('h2')
   const paraDate = document.createElement('p')
   const paraOne = document.createElement('p')
   const paraTwo = document.createElement('p')
@@ -106,7 +106,7 @@ function articleMaker(object){
   const wideBtn = document.createElement('span')
 
 
-  articleDiv.appendChild(h2title)
+  articleDiv.appendChild(headTwo)
   articleDiv.appendChild(paraDate)
   articleDiv.appendChild(paraDate)
   articleDiv.appendChild(paraOne)
@@ -122,15 +122,14 @@ function articleMaker(object){
   wideBtn.classList.add('expandButton')
   wideBtn.textContent = '+'
 
-
+  headTwo.textContent = object.title
 
 
 
   return articleDiv
 
 }
-const test = articleMaker()
-console.log(test)
+console.log(articleMaker(data[0]))
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   /*<div class="article">
