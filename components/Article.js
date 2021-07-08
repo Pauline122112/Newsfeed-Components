@@ -137,8 +137,8 @@ function articleMaker(object){
 
 }
 data.forEach(articleObj => {
-  const article = articleMaker(articleObj)
-  document.querySelector('.articles').appendChild(article)
+  const artic = articleMaker(articleObj)
+  document.querySelector('.articles').appendChild(artic)
 })
 
 
